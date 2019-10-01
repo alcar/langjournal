@@ -1,0 +1,10 @@
+query Entry($_id: ID!) {
+  entry(_id: $_id) {
+    _id
+    dateTime
+    description
+    language
+    tags
+    title
+  }
+}

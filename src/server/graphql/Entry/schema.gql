@@ -1,0 +1,69 @@
+# A journal entry.
+type Entry {
+  # The unique identifier.
+  _id: ID!
+  # The date and time of the last update.
+  dateTime: DateTime!
+  # The description.
+  description: String!
+  # The language.
+  language: Language!
+  # Custom categorization.
+  tags: [String]!
+  # The title.
+  title: String!
+}
+
+type Query {
+  # Fetches an entry by ID.
+  entry(
+    # The unique identifier.
+    _id: ID!
+  ): Entry
+
+  # Fetches a group of entries.
+  entries(
+    # The maximum number of entries.
+    limit: Int
+    # Controls the starting point of the query.
+    skip: Int
+  ): [Entry]
+}
+
+type Mutation {
+  # Creates a new entry.
+  createEntry(
+    # The creation date and time.
+    dateTime: DateTime!
+    # The description.
+    description: String!
+    # The language.
+    language: Language!
+    # Custom categorization.
+    tags: [String]
+    # The title.
+    title: String!
+  ): Entry!
+
+  # Deletes an entry by ID.
+  deleteEntry(
+    # The unique identifier.
+    _id: ID!
+  ): ID
+
+  # Updates an existing entry.
+  updateEntry(
+    # The unique identifier.
+    _id: ID!
+    # The date and time of the last update.
+    dateTime: DateTime!
+    # The description.
+    description: String!
+    # The language.
+    language: Language!
+    # Custom categorization.
+    tags: [String]
+    # The title.
+    title: String!
+  ): Entry!
+}

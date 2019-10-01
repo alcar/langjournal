@@ -1,0 +1,22 @@
+mutation CreateEntry(
+  $dateTime: DateTime!
+  $description: String!
+  $language: Language!
+  $tags: [String]
+  $title: String!
+) {
+  createEntry(
+    dateTime: $dateTime
+    description: $description
+    language: $language
+    tags: $tags
+    title: $title
+  ) {
+    _id
+    dateTime
+    description
+    language
+    tags
+    title
+  }
+}

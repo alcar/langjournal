@@ -1,0 +1,74 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.container {
+  width: 100%;
+}
+
+.input {
+  border-color: #ccc;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #2584ff;
+  border-style: solid;
+  border-width: 2px;
+  outline: none;
+}
+
+.input:hover {
+  border-color: #2a73d3;
+}
+
+.input:hover:not(:focus) {
+  border-color: #b2b2b2;
+}
+
+.input.error {
+  border-color: #f00;
+}
+
+.input.error:hover {
+  border-color: #d00;
+}
+
+.simpleInput:focus {
+  margin: -1px;
+}
+
+.textarea {
+  max-height: 200px;
+  max-width: 100%;
+  min-height: 100px;
+  min-width: 100%;
+}
+
+.textarea:focus {
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+}
+
+@media (min-width: 30em) {
+  .input {
+    font-size: 16px;
+  }
+}

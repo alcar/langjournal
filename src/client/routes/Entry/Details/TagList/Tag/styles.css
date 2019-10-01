@@ -1,0 +1,22 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.tag {
+  background-color: #eee;
+  border-radius: 5px;
+  color: #555;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  user-select: text;
+  word-break: break-all;
+}

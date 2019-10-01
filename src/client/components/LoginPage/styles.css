@@ -1,0 +1,136 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.bookmark {
+  display: none;
+}
+
+.journal {
+  background-color: #683524;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23572f23' fill-opacity='0.10' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  border-bottom-color: #a77670;
+  border-bottom-right-radius: 10px;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-right-color: #a77670;
+  border-right-style: dashed;
+  border-right-width: 2px;
+  border-top-color: #a77670;
+  border-top-right-radius: 10px;
+  border-top-style: dashed;
+  border-top-width: 2px;
+  box-shadow: 6px 0 0 10px #683524;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.loginLinks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-row-end: 5;
+  grid-row-start: 4;
+  justify-content: space-evenly;
+  margin-left: 9px;
+}
+
+.loginLinks > li {
+  display: inherit;
+}
+
+.page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 500px;
+  min-width: 280px;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-right: 9px;
+  padding-top: 6px;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  grid-row-end: 3;
+  grid-row-start: 2;
+  justify-content: center;
+  margin-left: 9px;
+}
+
+@media (min-width: 30em) {
+  .bookmark {
+    background-color: #b40000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23d40000' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    display: inline;
+    height: 40px;
+    left: -145px;
+    position: relative;
+    top: 6px;
+    width: 24px;
+  }
+
+  .bookmark::after {
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 14px;
+    content: '';
+    position: absolute;
+    top: 31px;
+  }
+
+  .journal {
+    border-bottom-color: #a77670;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-right-color: #a77670;
+    border-right-style: dashed;
+    border-right-width: 1px;
+    border-top-color: #a77670;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    box-shadow: 6px 0 0 6px #683524, 9px 0 0 6px #ededed, 12px 0 0 6px #683524,
+      17px 0 10px 1px #000;
+    height: 80%;
+    margin-right: 19px;
+    max-height: 500px;
+    width: 310px;
+  }
+
+  .loginLinks {
+    margin-left: 12px;
+  }
+
+  .page {
+    box-sizing: content-box;
+    min-height: 625px;
+    padding: 0;
+  }
+
+  .titleContainer {
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,85 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.button {
+  display: none;
+}
+
+.emptyState {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
+.emptyStateSuggestion {
+  margin-top: 40px;
+}
+
+.emptyStateSuggestionLink {
+  color: #2584ff;
+  text-decoration: none;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.previewList {
+  box-sizing: border-box;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 30em) {
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  .container {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    max-width: 968px;
+  }
+
+  .emptyState {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .preview {
+    display: initial;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .previewList {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,42 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.container {
+  align-items: center;
+  background-color: #2584ff;
+  border-radius: 100%;
+  bottom: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 30px;
+  height: 50px;
+  justify-content: center;
+  position: fixed;
+  right: 16px;
+  width: 50px;
+}
+
+.container:focus {
+  background-color: #2a73d3;
+}
+
+.container:hover {
+  background-color: #2a73d3;
+}
+
+.icon {
+  display: flex;
+}
+
+@media (min-width: 30em) {
+  .container {
+    display: none;
+  }
+}

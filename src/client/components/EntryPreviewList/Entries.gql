@@ -1,0 +1,10 @@
+query Entries($limit: Int, $skip: Int) {
+  entries(limit: $limit, skip: $skip) {
+    _id
+    dateTime
+    description
+    language
+    tags
+    title
+  }
+}

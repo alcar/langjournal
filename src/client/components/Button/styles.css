@@ -1,0 +1,99 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  border: 0;
+  cursor: progress;
+}
+
+.button:focus:not(:disabled) {
+  background-color: #eee;
+  outline: none;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #eee;
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .button {
+    border-color: #2584ff;
+    border-style: solid;
+    border-width: 2px;
+    color: #2584ff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 42px;
+    letter-spacing: 1px;
+    padding: initial;
+    text-transform: uppercase;
+    width: 120px;
+  }
+
+  .button:disabled {
+    color: #eee;
+  }
+
+  .buttonFixed {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .negative {
+    background-color: #f00;
+    border: 0;
+    color: #fff;
+  }
+
+  .negative:focus:not(:disabled),
+  .negative:hover:not(:disabled) {
+    background-color: #d00;
+  }
+
+  .positive {
+    background-color: #2584ff;
+    border: 0;
+    color: #fff;
+  }
+
+  .positive:focus:not(:disabled),
+  .positive:hover:not(:disabled) {
+    background-color: #2a73d3;
+  }
+
+  .text {
+    display: initial;
+  }
+}

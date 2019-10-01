@@ -1,0 +1,24 @@
+mutation UpdateEntry(
+  $_id: ID!
+  $dateTime: DateTime!
+  $description: String!
+  $language: Language!
+  $tags: [String]
+  $title: String!
+) {
+  updateEntry(
+    _id: $_id
+    dateTime: $dateTime
+    description: $description
+    language: $language
+    tags: $tags
+    title: $title
+  ) {
+    _id
+    dateTime
+    description
+    language
+    tags
+    title
+  }
+}

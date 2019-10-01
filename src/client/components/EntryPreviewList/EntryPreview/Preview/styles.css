@@ -1,0 +1,134 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is “Incompatible With Secondary Licenses”, as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+.container {
+  background-color: #fff;
+  border-color: #ddd;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  height: 110px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.description {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emptyState {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+}
+
+.language {
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.titleContainer {
+  align-items: center;
+  border-bottom-color: #ddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+@media (min-width: 30em) {
+  .container {
+    display: inline-block;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 200px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .container::after {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .container:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transform: scale(1.2, 1.2);
+  }
+
+  .container:hover::after {
+    opacity: 1;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .emptyState {
+    font-size: 16px;
+  }
+
+  .language {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
