@@ -113,6 +113,20 @@ npm run release minor
 npm run release major
 ```
 
+### Testing
+
+#### Single run
+
+```
+npm run test
+```
+
+#### Watch mode
+
+```
+npm run test --watch
+```
+
 ### Type checking
 
 ```
