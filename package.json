@@ -15,7 +15,7 @@
     "lintLocales": "intl-equalizer",
     "lintScripts": "eslint -c .eslintrc.js ./ --ext=js,ts,tsx --max-warnings=0",
     "lintStyles": "stylelint ./**/*.css",
-    "postreleasy": "git push heroku master",
+    "postreleasy": "git push heroku master -f",
     "prereleasy": "npm-run-all -p checkFormatting checkTyping clearBuild lint -s buildProd",
     "prod": "cross-env NODE_ENV=production run-s buildProd start",
     "release": "releasy",
