@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Remove `-a` flag from `lintLocales`'s `intl-equalizer` command.
+
+### Security
+
+- Upgrade "serialize-javascript", and all other upgradable packages.
+
 ## [0.1.0] - 2019-10-01
 
 ### Added
