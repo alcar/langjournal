@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2020-01-08
+
 ### Changed
 
 - Dockerfile's Node image (v12, LTS) and global npm packages (remove Yarn, already installed).
