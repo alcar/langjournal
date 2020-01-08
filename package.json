@@ -34,6 +34,7 @@
     "not IE <= 11",
     "not OperaMini all",
     "not OperaMobile <= 46",
+    "not Safari <= 5.1",
     "not UCAndroid <= 12.12"
   ],
   "author": "Alan Carpilovsky",
