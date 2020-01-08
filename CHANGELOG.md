@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use the `--force` flag when deploying to Heroku.
+
 ## [0.1.2] - 2020-01-08
 
 ### Changed
