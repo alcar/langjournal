@@ -12,7 +12,7 @@
     "clearBuild": "rimraf build",
     "dev": "run-s clearBuild buildDevServer start",
     "lint": "run-p lintLocales lintScripts lintStyles",
-    "lintLocales": "intl-equalizer -a",
+    "lintLocales": "intl-equalizer",
     "lintScripts": "eslint -c .eslintrc.js ./ --ext=js,ts,tsx --max-warnings=0",
     "lintStyles": "stylelint ./**/*.css",
     "postreleasy": "git push heroku master",
@@ -34,6 +34,7 @@
     "not IE <= 11",
     "not OperaMini all",
     "not OperaMobile <= 46",
+    "not Safari <= 5.1",
     "not UCAndroid <= 12.12"
   ],
   "author": "Alan Carpilovsky",

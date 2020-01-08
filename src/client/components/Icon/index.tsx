@@ -23,7 +23,9 @@ type Props = {
   title?: string
 }
 
-const noOp = (): void => {}
+const noOp = (): void => {
+  return
+}
 
 const Icon: React.FC<Props> = ({
   className,

@@ -42,7 +42,10 @@ const TagSelector: React.FC<Props> = ({ initialValue, setValue }) => {
 
   const updateFormValue = React.useCallback(
     (value: State['value']) => {
-      setValue('tags', value.map(item => item.value))
+      setValue(
+        'tags',
+        value.map(item => item.value),
+      )
     },
     [setValue],
   )
