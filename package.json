@@ -27,15 +27,15 @@
   },
   "browserslist": [
     "defaults",
-    "not Android <= 4.4.4",
-    "not and_qq <= 1.2",
-    "not Baidu <= 7.12",
+    "not Android 4.4.4",
+    "not Baidu 7.12",
     "not ExplorerMobile 11",
-    "not IE <= 11",
+    "not IE 11",
     "not OperaMini all",
-    "not OperaMobile <= 46",
-    "not Safari <= 5.1",
-    "not UCAndroid <= 12.12"
+    "not OperaMobile 59",
+    "not QQAndroid 10.4",
+    "not Safari 5.1",
+    "not UCAndroid 12.12"
   ],
   "author": "Alan Carpilovsky",
   "license": "MPL-2.0",
