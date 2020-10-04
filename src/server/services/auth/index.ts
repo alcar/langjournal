@@ -31,10 +31,12 @@ const addAuth = (expressApp: Application): Application => {
 
   passport.use(new GoogleStrategy(GOOGLE_STRATEGY_CONFIG, googleVerifyCallback))
 
-  let callbackUrl: string
+  let callbackUrl: string | null = null
 
   expressApp.get('/auth/google', (req, res, next) => {
-    callbackUrl = req.query && req.query.callback
+    const callbackParam = req.query?.callback
+
+    callbackUrl = typeof callbackParam === 'string' ? callbackParam : null
 
     return passport.authenticate('google', {
       scope: ['email', 'profile'],
@@ -54,7 +56,7 @@ const addAuth = (expressApp: Application): Application => {
   expressApp.use(/(?!^\/login$)^\/.*$/, authCheckHandler)
 
   expressApp.get('/auth/logout', (req, res) => {
-    req.session = undefined
+    req.session = null
 
     res.redirect(LOGIN_PATH)
   })
