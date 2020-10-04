@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update package.json's `browserslist`.
+
+### Security
+
+- Upgrade "lodash" and all other upgradable packages.
+
 ## [0.1.5] - 2020-10-04
 
 ### Fixed
