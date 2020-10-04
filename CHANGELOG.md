@@ -7,11 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Type errors.
+
+### Security
+
+- Upgrade the dependencies with known vulnerabitilies and all other upgradable ones.
+
 ## [0.1.4] - 2020-03-15
 
 ### Security
 
-- Upgrade "acorn", and all other upgradable packages.
+- Upgrade "acorn" and all other upgradable packages.
 
 ## [0.1.3] - 2020-01-08
 
@@ -33,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Upgrade "serialize-javascript", and all other upgradable packages.
+- Upgrade "serialize-javascript" and all other upgradable packages.
 
 ## [0.1.0] - 2019-10-01
 
