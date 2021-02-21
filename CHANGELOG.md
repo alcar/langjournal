@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Make `pm2` a non-dev dependency.
+
+### Security
+
+- Upgrade `axios`, `ini`, `object-path`, and all other upgradable packages.
+
 ## [0.1.6] - 2020-10-04
 
 ### Changed
@@ -15,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Upgrade "lodash" and all other upgradable packages.
+- Upgrade `lodash` and all other upgradable packages.
 
 ## [0.1.5] - 2020-10-04
 
@@ -31,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Upgrade "acorn" and all other upgradable packages.
+- Upgrade `acorn` and all other upgradable packages.
 
 ## [0.1.3] - 2020-01-08
 
@@ -53,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Upgrade "serialize-javascript" and all other upgradable packages.
+- Upgrade `serialize-javascript` and all other upgradable packages.
 
 ## [0.1.0] - 2019-10-01
 
