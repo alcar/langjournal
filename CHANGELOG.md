@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Remove `pm2` from dependencies since it's currently only used inside Docker.
+
 ## [0.1.8] - 2021-02-21
 
 ### Changed
