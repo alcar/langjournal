@@ -25,7 +25,7 @@ const addAuth = (expressApp: Application): Application => {
     done(null, userId)
   })
 
-  passport.deserializeUser((userId, done) => {
+  passport.deserializeUser<Express.User>((userId, done) => {
     done(null, userId)
   })
 
