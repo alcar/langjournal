@@ -7,13 +7,13 @@
  * defined by the Mozilla Public License, v. 2.0.
  */
 
-import { FormikActions } from 'formik'
+import { FormikHelpers } from 'formik'
 import { ExecutionResult } from 'graphql'
 
 import Entry from '../../../typings/entry'
 
 declare namespace EntryForm {
-  type SetValue = FormikActions<Values>['setFieldValue']
+  type SetValue = FormikHelpers<Values>['setFieldValue']
 
   type SubmitHandler = (values: Values) => Promise<ExecutionResult>
 

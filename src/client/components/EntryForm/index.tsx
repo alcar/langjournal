@@ -7,11 +7,12 @@
  * defined by the Mozilla Public License, v. 2.0.
  */
 
-import { Form, Formik, FormikActions } from 'formik'
+import { Form, Formik, FormikHelpers } from 'formik'
 import React from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
+import { useId } from '../../hooks/useId'
 import PageTitle from '../PageTitle'
 
 import CancelButton from './CancelButton'
@@ -32,7 +33,7 @@ type Props = {
 
 const EntryForm: React.FC<Props> = ({ initialValues, onSubmit }) => {
   const history = useHistory()
-  const { id } = useParams()
+  const id = useId()
 
   const isNew = !id
 
@@ -46,7 +47,7 @@ const EntryForm: React.FC<Props> = ({ initialValues, onSubmit }) => {
   }, [id, history, isNew])
 
   const handleSubmit = React.useCallback(
-    async (values: Typings.Values, actions: FormikActions<Typings.Values>) => {
+    async (values: Typings.Values, actions: FormikHelpers<Typings.Values>) => {
       actions.setStatus()
 
       try {

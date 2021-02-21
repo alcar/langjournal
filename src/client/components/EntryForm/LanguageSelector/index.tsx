@@ -31,7 +31,7 @@ const LanguageSelector: React.FC<Props> = ({ setValue, value }) => {
   )
 
   const handleChange = React.useCallback(
-    (option: ValueType<typeof LANGUAGE_OPTIONS[0]>) => {
+    (option: ValueType<typeof LANGUAGE_OPTIONS[0], false>) => {
       if (option && !Array.isArray(option) && option.value) {
         setValue('language', option.value)
       }

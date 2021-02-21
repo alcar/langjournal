@@ -77,7 +77,7 @@ const TagSelector: React.FC<Props> = ({ initialValue, setValue }) => {
   )
 
   const handleChange = React.useCallback(
-    (newValue: ValueType<Typings.Value>) => {
+    (newValue: ValueType<Typings.Value, true>) => {
       if (newValue) {
         setState({
           value: Array.isArray(newValue) ? newValue : [newValue],
@@ -136,7 +136,7 @@ const TagSelector: React.FC<Props> = ({ initialValue, setValue }) => {
 
       <Description messageId="form.field.tags.description" />
 
-      <Creatable<Typings.Value>
+      <Creatable
         className={state.value.length === 0 ? styles.creatable : undefined}
         components={{ DropdownIndicator: null }}
         inputValue={state.inputValue}

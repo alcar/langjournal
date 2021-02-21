@@ -9,11 +9,12 @@
 
 import { useQuery } from '@apollo/react-hooks'
 import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import EntryStyles from '../../components/EntryStyles'
 import Error from '../../components/Error'
 import Loader from '../../components/Loader'
+import { useId } from '../../hooks/useId'
 
 import Details from './Details'
 import EntryQuery from './Entry.gql'
@@ -22,7 +23,7 @@ import UpdateForm from './UpdateForm'
 
 const Entry: React.FC = () => {
   const location = useLocation()
-  const { id } = useParams()
+  const id = useId()
 
   const { data, error, loading } = useQuery<Typings.EntryData>(EntryQuery, {
     variables: { _id: id },
