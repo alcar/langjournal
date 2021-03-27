@@ -1,6 +1,6 @@
 {
   "name": "langjournal",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A personal language learning journal",
   "scripts": {
     "buildDevServer": "webpack --config webpack.server.dev.js",
