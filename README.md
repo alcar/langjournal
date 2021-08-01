@@ -29,17 +29,10 @@ This project is no longer being maintained.
 
 ## Sections
 
-- [Demo](#demo)
 - [Changelog](#changelog)
 - [Development](#development)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-
-## Demo
-
-During this initial development phase, LangJournal is being hosted on [Heroku](https://www.heroku.com/) and running on a free dyno, which sleeps whenever it receives no web traffic in a 30-minute period. Therefore, if the dyno is sleeping, **the page may take up to 1 minute to load**.
-
-Link: https://langjournal.herokuapp.com/.
 
 ## Changelog
 
