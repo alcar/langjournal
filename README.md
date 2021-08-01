@@ -23,6 +23,10 @@
   >
 </p>
 
+## Disclaimer
+
+This project is no longer being maintained.
+
 ## Sections
 
 - [Demo](#demo)
